@@ -1,0 +1,73 @@
+.title {
+    text-align: center;
+    font-size: 3rem;
+}
+
+body {
+    background-color: #ccc;
+}
+
+#calculator {
+    display: flex;
+    flex-direction: column;
+    width: 310px;
+    height: 448px;
+    margin: auto;
+    background-color: #888;
+    border: solid 3px #444;
+}
+
+#flexbox {
+    display: flex;
+    flex-direction: row;
+}
+
+#screen {
+    background-color: #555;
+    height: 50px;
+    width: 290px;
+    margin: 10px auto;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#numbers {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: 15px;
+}
+
+#extrabuttonstop {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 15px 0px 15px;
+}
+
+#extrabuttonside {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-right: 15px;
+}
+
+.number, .extrabutton, #clear {
+    background-color: #666;
+    height: 60px;
+    width: 60px;
+    margin: 5px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+    font-weight: bold;
+    box-shadow: 2px 2px #555;
+    cursor: pointer;
+}
+
+.number:active, .extrabutton:active, #clear:active {
+    box-shadow: 0px 0px;
+}
